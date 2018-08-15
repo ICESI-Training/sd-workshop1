@@ -12,7 +12,9 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "icesi_alpine_0.1.0"
+  config.vm.box = "centos1706_v0.2.0"
+  config.vm.network "public_network", type: "dhcp"
+
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
