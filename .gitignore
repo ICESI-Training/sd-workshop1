@@ -2,3 +2,5 @@ __pycache__
 .vagrant
 deleteme
 .gitignore
+.gitignore.swo
+.gitignore.swp
