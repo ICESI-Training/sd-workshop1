@@ -1,1 +1,1 @@
-package 'httpd'
+yum_package 'httpd'
