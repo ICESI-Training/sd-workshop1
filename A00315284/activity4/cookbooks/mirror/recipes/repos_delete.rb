@@ -1,7 +1,8 @@
 bash 'repos_delete' do
-	cwd '/etc/yum.repos.d'
+	user 'root'
+	cwd '/etc/yum.repos.d/'
 	code <<-EOH
-   	 rm -rf *
-      EOH
+        rm -rf *
+        EOH
 end
 

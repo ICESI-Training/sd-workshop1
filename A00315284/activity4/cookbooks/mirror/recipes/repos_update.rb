@@ -1,6 +1,8 @@
-bash 'yum_update' do
+bash 'repos_update' do
+	user 'root'
+	cwd '/'
 	code <<-EOH
-	    yum clean all
+	    yum repolist
 	    yum update -y
           EOH
 end
